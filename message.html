@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+	    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport"> 
+	    <meta name="format-detection" content="" telephone="no">
+	    <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
+		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">   
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			#container{
+				width: 80%;
+				background: url(img/all_icon.png) no-repeat center center;
+				background-size:100% 100% ;
+				margin: 0 auto;
+				position: relative;
+			}
+			#container a.box{
+				display: inline-block;
+				width:22%;
+				height: 22%;
+		/*		margin-left: 50%;
+			    margin-top: 50%;*/
+				position: absolute;
+			}
+			#container a.dot{
+				width: 30%;
+			    height: 30%;
+			    display: inline-block;
+			    position: absolute;
+			 /*   left: -15%;
+			    top: -15%;*/
+			}
+	/*		#container a:nth-child(2){
+				left: -11%;
+    			top: -50%;
+			}
+			#container a:nth-child(3){
+				right: 11%;
+    			top: -39%;
+			}
+			#container a:nth-child(4){
+				right: 0;
+   				 top: -11%;
+			}
+			#container a:nth-child(4){
+				right: 0;
+   				 top: -11%;
+			}
+			#container a:nth-child(5){
+				right: 11%;
+   				 top: 17%;
+			}
+			#container a:nth-child(6){
+				left: -11%;
+   				bottom: 0;
+			}
+			#container a:nth-child(7){
+				left: -39%;
+    			bottom: 12%;
+			}
+			#container a:nth-child(8){
+				left: -50%;
+    			top: -11%;
+			}
+			#container a:nth-child(9){
+			    left: -40%;
+    			top: -39%;
+			}*/
+		</style>
+		<script type="text/javascript">
+		//设置圆
+		 	function roundFun(){
+		 		var container = document.getElementById("container");
+		 		var dot = document.getElementsByClassName("dot")[0];
+		 		var box = document.getElementsByClassName("box");
+		 		//中心点横坐标
+		        var dotLeft = (container.offsetWidth-dot.offsetWidth)/2;
+		        //中心点纵坐标
+		        var dotTop = (container.offsetHeight-dot.offsetHeight)/2;
+		        //起始角度
+		        var stard = 0;
+		        //半径
+		        var radius = (container.offsetWidth/2) - (box[0].offsetWidth/2);
+		        //每一个BOX对应的角度;
+		        var avd = 360/box.length;
+		        //每一个BOX对应的弧度;
+		        var ahd = avd*Math.PI/180;
+		        
+		        var db = (dot.offsetWidth-box[0].offsetWidth)/2;
+		        
+		        //设置圆的中心点的位置
+		        dot.style.left=dotLeft+"px";
+		        dot.style.top=dotTop+"px";
+		        for(var i = 0; i < box.length; i++){
+		        	box[i].style.left= Math.sin((ahd*i))*radius+dotLeft + db +"px";
+		        	box[i].style.top= Math.cos((ahd*i))*radius+dotTop + db +"px";
+		        	
+		        }
+		 }
+			window.onload=function(){
+				var allImg = document.getElementById("container");
+				allImg.style.height=allImg.offsetWidth+"px";
+				roundFun()
+			}
+		</script>
+	</head>
+	<body>
+		<div class="management">
+			<div id="container">
+				<a href="" class="dot"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+				<a href="" class="box"></a>
+			</div>
+			<div class="bottom-btn-group">
+				<a href="message.html" style="color: #08A3E5;">
+					<span class="icon"></span>
+					物业消息
+				</a>
+				<a href="">
+					<span class="icon"></span>
+					钱包
+				</a>
+				<a href="life.html">
+					<span class="icon"></span>
+					汇生活
+				</a>
+				<a href="">
+					<span class="icon"></span>
+					个人中心
+				</a>
+			</div>
+		</div>
+	</body>
+</html>
