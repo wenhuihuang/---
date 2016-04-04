@@ -25,12 +25,14 @@
 		/*		margin-left: 50%;
 			    margin-top: 50%;*/
 				position: absolute;
+				color: transparent;
 			}
 			#container a.dot{
 				width: 30%;
 			    height: 30%;
 			    display: inline-block;
 			    position: absolute;
+			    color:transparent;
 			 /*   left: -15%;
 			    top: -15%;*/
 			}
@@ -103,23 +105,32 @@
 		 }
 			window.onload=function(){
 				var allImg = document.getElementById("container");
+				var bottomGroup = document.getElementsByClassName("bottom-btn-group")[0]; 
+				var container = document.getElementById("container");
+				var winHeight = window.offsetHeight;
 				allImg.style.height=allImg.offsetWidth+"px";
 				roundFun()
+				//alert(winHeight)
 			}
 		</script>
 	</head>
 	<body>
 		<div class="management">
+			<div class="panner">
+				<ul>
+					<li><img src="img/img.jpg"></li>
+				</ul>
+			</div>
 			<div id="container">
-				<a href="" class="dot"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
-				<a href="" class="box"></a>
+				<a href="" class="dot">一键物管</a>
+				<a href="" class="box">废品处理</a>
+				<a href="" class="box">快递服务</a>
+				<a href="check.html" class="box">费用查询</a>
+				<a href="" class="box">小区新闻</a>
+				<a href="notice.html" class="box">物业公告</a>
+				<a href="" class="box">报修处理</a>
+				<a href="" class="box">投诉建议</a>
+				<a href="" class="box">二手闲置</a>
 			</div>
 			<div class="bottom-btn-group">
 				<a href="message.html" style="color: #08A3E5;">
