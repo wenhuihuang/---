@@ -200,20 +200,44 @@ input {-webkit-appearance:none; /*去除input默认样式*/}
 }
 
 .bottom-btn-group a:nth-child(1) span.icon {
-	background: url(../img/home_icon.jpg) no-repeat center center;
+	background: url(../img/home_icon.png) no-repeat center center;
+	background-size:100%;
+}
+.bottom-btn-group a:nth-child(1).active span.icon{
+	background: url(../img/home_blue_icon.png) no-repeat center center;
+	background-size:100%;
 }
 
 .bottom-btn-group a:nth-child(2) span.icon {
-	background: url(../img/money_icon.jpg) no-repeat center center;
+	background: url(../img/money_icon.png) no-repeat center center;
+	background-size:85%;
+}
+.bottom-btn-group a:nth-child(2).active span.icon {
+	background: url(../img/money_blue_icon.png) no-repeat center center;
+	background-size:85%;
 }
 
 .bottom-btn-group a:nth-child(3) span.icon {
-	background: url(../img/life_icon.jpg) no-repeat center center;
+	background: url(../img/life_icon.png) no-repeat center center;
+	background-size:100%;
+}
+.bottom-btn-group a:nth-child(3).active span.icon {
+	background: url(../img/life_blue_icon.png) no-repeat center center;
+	background-size:100%;
 }
 
 .bottom-btn-group a:nth-child(4) span.icon {
-	background: url(../img/user_icon.jpg) no-repeat center center;
+	background: url(../img/user_icon.png) no-repeat center center;
+	background-size: 70%;
 }
+.bottom-btn-group a:nth-child(4).active span.icon {
+	background: url(../img/user_blue_icon.png) no-repeat center center;
+	background-size: 70%;
+}
+.bottom-btn-group a.active{
+	color: #08A3E5;
+}
+
 
 .management .main {
 	position: relative;
@@ -240,7 +264,6 @@ input {-webkit-appearance:none; /*去除input默认样式*/}
 	margin: 0 auto;
 	margin-bottom: 5px;
 }
-
 .life-main ul li {}
 
 .life-main {
@@ -268,4 +291,20 @@ input {-webkit-appearance:none; /*去除input默认样式*/}
 }
 .panner img{
 	width:100%;
+	display: block;
+}
+.dir-icon{
+	width: 25px;
+	height: 25px;
+	display: block;
+	vertical-align: middle;
+	float: right;
+	margin-top:5px;
+	background: url(../img/dir_icon.png) no-repeat;
+}
+.dir-down{
+	background-position: 0 -61px;
+}
+.dir-left{
+	
 }

@@ -11,14 +11,6 @@
 		<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">   
 		<link rel="stylesheet" href="css/index.css" />
 		<style>
-		.bottom-btn-group a:nth-child(1) span.icon
-			{
-				background: url(img/home_d.jpg) no-repeat center center;
-			}
-		.bottom-btn-group a:nth-child(3).active span.icon
-			{
-				background: url(img/life_bule_icon.jpg) no-repeat center center;
-			}
 			.server-list-img{
 				float: left;
 			}
@@ -28,6 +20,7 @@
 			}
 			.server-list-con{
 				float: left;
+				margin-left: 10px;
 			}
 			.server-list>ul>li>a{
 				display: block;
@@ -49,19 +42,23 @@
 			}
 			p.server-list-con-title{
 				padding: 8px 0;
+				font-size: 14px;
 			}
 			.search{
 				background: #fff;
 				height: 30px;
 				line-height: 30px;
-				display: flex;
+				position: relative;
 			}
 			.search input[type='text']{
-				width:100%;
+				width:80%;
 				border: none;
     			outline: none;
     			padding:0 5px;
     			display: inline-block;
+    			position: absolute;
+    			left: 0;
+    			top:7px;
 			}
 			.search .search-btn{
 				width: 20px;
@@ -72,6 +69,8 @@
 			    margin-right: 10px;
 			    background: url(img/search_icon.png) no-repeat center center;
 			    background-size: 100% 100%;
+			    position: absolute;
+			    right:0;
 			}
 			.server-wrap{
 				padding:10px 0;
@@ -88,7 +87,7 @@
 				<div class="server-list">
 					<ul>
 						<li>
-							<a href="#" class="clearfix">
+							<a href="merchant.html" class="clearfix">
 								<div class="server-list-img"><img src="img/merchant_1.jpg"></div>
 								<div class="server-list-con">
 									<p class="server-list-con-title">华浔口味装饰</p>
@@ -117,11 +116,11 @@
 					<span class="icon"></span>
 					钱包
 				</a>
-				<a href="" class="active" style="color: #08A3E5;">
+				<a href="life.html" class="active" style="color: #08A3E5;">
 					<span class="icon"></span>
 					汇生活
 				</a>
-				<a href="">
+				<a href="userCenter.html">
 					<span class="icon"></span>
 					个人中心
 				</a>

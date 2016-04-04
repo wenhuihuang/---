@@ -17,6 +17,7 @@
 				background-size:100% 100% ;
 				margin: 0 auto;
 				position: relative;
+				margin-top:10px;
 			}
 			#container a.box{
 				display: inline-block;
@@ -72,6 +73,10 @@
 			    left: -40%;
     			top: -39%;
 			}*/
+			.panner img{
+				width:100%;
+				display: block;
+			}
 		</style>
 		<script type="text/javascript">
 		//设置圆
@@ -116,24 +121,26 @@
 	</head>
 	<body>
 		<div class="management">
-			<div class="panner">
-				<ul>
-					<li><img src="img/img.jpg"></li>
-				</ul>
-			</div>
-			<div id="container">
-				<a href="" class="dot">一键物管</a>
-				<a href="" class="box">废品处理</a>
-				<a href="" class="box">快递服务</a>
-				<a href="check.html" class="box">费用查询</a>
-				<a href="" class="box">小区新闻</a>
-				<a href="notice.html" class="box">物业公告</a>
-				<a href="" class="box">报修处理</a>
-				<a href="" class="box">投诉建议</a>
-				<a href="" class="box">二手闲置</a>
+			<div id="" style="margin-bottom: 58px;">
+				<div class="panner">
+					<ul>
+						<li><img src="img/img.jpg"></li>
+					</ul>
+				</div>
+				<div id="container">
+					<a href="" class="dot">一键物管</a>
+					<a href="" class="box">废品处理</a>
+					<a href="" class="box">快递服务</a>
+					<a href="check.html" class="box">费用查询</a>
+					<a href="" class="box">小区新闻</a>
+					<a href="notice.html" class="box">物业公告</a>
+					<a href="" class="box">报修处理</a>
+					<a href="" class="box">投诉建议</a>
+					<a href="" class="box">二手闲置</a>
+				</div>
 			</div>
 			<div class="bottom-btn-group">
-				<a href="message.html" style="color: #08A3E5;">
+				<a href="message.html" class="active" style="color: #08A3E5;">
 					<span class="icon"></span>
 					物业消息
 				</a>
@@ -145,7 +152,7 @@
 					<span class="icon"></span>
 					汇生活
 				</a>
-				<a href="">
+				<a href="userCenter.html">
 					<span class="icon"></span>
 					个人中心
 				</a>
